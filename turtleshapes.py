@@ -1,0 +1,42 @@
+import turtle
+turtle.tracer(1)
+rounds = 10
+size = 10
+turtle.speed(400)
+turtle.penup()
+turtle.goto(0,-400)
+turtle.pendown()
+mike = turtle.clone()
+steve = turtle.clone()
+turtle.bgcolor("white")
+turtle.hideturtle()
+mike.color("gold")
+steve.color("blue")
+steve.goto(5,-395)
+while True:
+	mike.circle(size)
+	mike.penup()
+	mike.forward(5)
+	mike.pendown()
+	steve.circle(size)
+	steve.penup()
+	steve.forward(5)
+	steve.pendown()
+	size += 10
+while True:
+        m = turtle.clone()
+        s = turtle.clone()
+        m.goto(0,400)
+        s.goto(0,395)
+        m.left(180)
+        s.left(180)
+	m.circle(size)
+	m.penup()
+	m.forward(5)
+	m.pendown()
+	s.circle(size)
+	s.penup()
+	s.forward(5)
+	s.pendown()
+	size += 10
+turtle.mainloop()
